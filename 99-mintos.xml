@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<!-- remotes -->
-        <remote name="pixel" fetch="https://github.com/PixelExperience" revision="eleven" review="gerrit.pixelexperience.org" />
-        <remote name="pixel-gitlab" fetch="https://gitlab.pixelexperience.org/android" revision="eleven" />
+	<!-- Remotes -->
+	<remote name="pixel" fetch="https://github.com/PixelExperience" revision="eleven" review="gerrit.pixelexperience.org" />
+	<remote name="pixel-gitlab" fetch="https://gitlab.pixelexperience.org/android" revision="eleven" />
 	<remote name="gitlab-pixel" fetch="https://gitlab.com/PixelExperience" revision="eleven" />
 	<remote name="gitlab-nift4" fetch="https://gitlab.com/nift4" revision="eleven" />
 	<remote name="github-ssh" fetch="ssh://git@github.com" />
-        
-	<!-- core system -->
+
+	<!-- Core system -->
 	<remove-project name="LineageOS/android_frameworks_base" />
 	<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
 	<remove-project name="LineageOS/android_packages_apps_Dialer" />
@@ -32,10 +32,10 @@
 	<project path="prebuilts/abi-dumps/vndk" name="LineageOSMod/android_prebuilts_abi-dumps_vndk" groups="pdk-fs" clone-depth="1" />
 	<project path="frameworks/native" name="Mint-OS/android_frameworks_native" groups="pdk" />
 	<project path="system/core" name="Mint-OS/android_system_core" groups="pdk" />
-        <project path="build/soong" name="LineageOSMod/android_build_soong" groups="pdk,tradefed" >
-    	  <linkfile src="root.bp" dest="Android.bp" />
-    	  <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  	</project>
+	<project path="build/soong" name="LineageOSMod/android_build_soong" groups="pdk,tradefed" >
+	  <linkfile src="root.bp" dest="Android.bp" />
+	  <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+	</project>
 	<project path="frameworks/av" name="LineageOSMod/android_frameworks_av" groups="pdk" />
 	<project path="bionic" name="Mint-OS/android_bionic" groups="pdk" />
 	<project path="external/zlib" name="LineageOSMod/android_external_zlib" groups="pdk" />
@@ -43,42 +43,43 @@
 	<project path="system/vold" name="ForkLineageOS/android_system_vold" groups="pdk" />
 	<project path="external/asus/stitchimage" name="syberia-project/platform_external_asus_stitchimage" remote="github" revision="11.0" />
 	<project path="vendor/gapps" name="vendor_gapps" remote="gitlab-nift4" />
-	
-	<!-- faceunlock -->
-        <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
+
+	<!-- Faceunlock -->
+	<project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab" />
 	<project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
 	
 	<!-- vendor/extra -->
 	<project name="Mint-OS/android_vendor_extra" path="vendor/extra" remote="github" />
 	<project name="nift4/Mint-OS" path="vendor/ota" remote="github-ssh" revision="ota" />
-	
-	<!-- device PL2 -->
-  	<project path="vendor/nokia" name="TheMuppets/proprietary_vendor_nokia" />
 
-        <!-- device pro1 -->
-        <project path="vendor/fxtec" name="TheMuppets/proprietary_vendor_fxtec" />
 
-        <!-- device yggdrasil
-        <project path="device/volla/yggdrasil" name="wikomeme/android_device_volla_yggdrasil" remote="github" revision="staging/lineage-17.1" />
-        <project path="kernel/volla/mt6763" name="wikomeme/android_kernel_volla_mt6763" remote="github" />
-        <project path="vendor/volla/yggdrasil" name="wikomeme/android_vendor_volla_yggdrasil" remote="github" revision="master" /> -->
+	<!-- Device PL2 -->
+	<project path="vendor/nokia" name="TheMuppets/proprietary_vendor_nokia" />
 
-        <!--Device repos--> 
-        <project path="device/motorola/ahannah" name="moto-msm8937/android_device_motorola_ahannah" />
-        <project path="device/motorola/cedric" name="moto-msm8937/android_device_motorola_cedric" revision="c647e4de5bf71ea8bc4ec1cf9f0fbf282c271427" />
-        <project path="device/motorola/hannah" name="moto-msm8937/android_device_motorola_hannah" />
-        <project path="device/motorola/hannah-common" name="moto-msm8937/android_device_motorola_hannah-common" revision="2bac8cfc5b2e5be3d203df9b28e10be6b4bdb8fe" />
-        <project path="device/motorola/montana" name="moto-msm8937/android_device_motorola_montana" revision="c6fe03b617a45d62b75b964438ea97ecea3cca86" />
-        <project path="device/motorola/msm8937-common" name="LineageOS/android_device_motorola_msm8937-common" revision="e3ee0a674f0ec4064dba72847bb591feb5eb415f" />
-        <project path="device/motorola/rhannah" name="moto-msm8937/android_device_motorola_rhannah" />
-        <project path="kernel/motorola/msm8953" name="Mint-OS/android_kernel_motorola_msm8953" />
-        <project path="vendor/motorola" name="moto-msm8937/proprietary_vendor_motorola" revision="c19c2afa1ea2d7f8f3c6b93614fbcf2ddd7763a0" />
+	<!-- Device pro1 -->
+	<project path="vendor/fxtec" name="TheMuppets/proprietary_vendor_fxtec" />
 
-        <!-- Dependencies of msm8937-common -->
-        <project path="external/bson" name="LineageOS/android_external_bson" />
-        <project path="system/qcom" name="LineageOS/android_system_qcom" />
+	<!-- Device yggdrasil
+	<project path="device/volla/yggdrasil" name="wikomeme/android_device_volla_yggdrasil" remote="github" revision="staging/lineage-17.1" />
+	<project path="kernel/volla/mt6763" name="wikomeme/android_kernel_volla_mt6763" remote="github" />
+	<project path="vendor/volla/yggdrasil" name="wikomeme/android_vendor_volla_yggdrasil" remote="github" revision="master" /> -->
 
-  	<!-- updater fork -->
-  	<remove-project name="LineageOS/android_packages_apps_Updater" />
-  	<project path="packages/apps/Updater" name="moto-msm8937/android_packages_apps_Updater" />
+	<!-- Device repos --> 
+	<project path="device/motorola/ahannah" name="moto-msm8937/android_device_motorola_ahannah" />
+	<project path="device/motorola/cedric" name="moto-msm8937/android_device_motorola_cedric" revision="c647e4de5bf71ea8bc4ec1cf9f0fbf282c271427" />
+	<project path="device/motorola/hannah" name="moto-msm8937/android_device_motorola_hannah" />
+	<project path="device/motorola/hannah-common" name="moto-msm8937/android_device_motorola_hannah-common" revision="2bac8cfc5b2e5be3d203df9b28e10be6b4bdb8fe" />
+	<project path="device/motorola/montana" name="moto-msm8937/android_device_motorola_montana" revision="c6fe03b617a45d62b75b964438ea97ecea3cca86" />
+	<project path="device/motorola/msm8937-common" name="LineageOS/android_device_motorola_msm8937-common" revision="e3ee0a674f0ec4064dba72847bb591feb5eb415f" />
+	<project path="device/motorola/rhannah" name="moto-msm8937/android_device_motorola_rhannah" />
+	<project path="kernel/motorola/msm8953" name="Mint-OS/android_kernel_motorola_msm8953" />
+	<project path="vendor/motorola" name="moto-msm8937/proprietary_vendor_motorola" revision="c19c2afa1ea2d7f8f3c6b93614fbcf2ddd7763a0" />
+
+	<!-- Dependencies of msm8937-common -->
+	<project path="external/bson" name="LineageOS/android_external_bson" />
+	<project path="system/qcom" name="LineageOS/android_system_qcom" />
+
+	<!-- Updater fork -->
+	<remove-project name="LineageOS/android_packages_apps_Updater" />
+	<project path="packages/apps/Updater" name="SirRGB/android_packages_apps_Updater" remote="github" revision="Mint" />
 </manifest>
