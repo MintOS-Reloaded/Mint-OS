@@ -53,18 +53,45 @@
 	<project name="nift4/Mint-OS" path="vendor/ota" remote="github-ssh" revision="ota" />
 
 
-	<!-- Device PL2 -->
-	<project path="vendor/nokia" name="TheMuppets/proprietary_vendor_nokia" />
+	<!-- Device PL2
+	<project path="vendor/nokia" name="TheMuppets/proprietary_vendor_nokia" /> -->
 
-	<!-- Device pro1 -->
-	<project path="vendor/fxtec" name="TheMuppets/proprietary_vendor_fxtec" />
+	<!-- Device pro1
+	<project path="vendor/fxtec" name="TheMuppets/proprietary_vendor_fxtec" /> -->
 
 	<!-- Device yggdrasil
 	<project path="device/volla/yggdrasil" name="wikomeme/android_device_volla_yggdrasil" remote="github" revision="staging/lineage-17.1" />
 	<project path="kernel/volla/mt6763" name="wikomeme/android_kernel_volla_mt6763" remote="github" />
 	<project path="vendor/volla/yggdrasil" name="wikomeme/android_vendor_volla_yggdrasil" remote="github" revision="master" /> -->
 
-	<!-- Device repos --> 
+	<!-- Device Griffin -->
+	<project name="LineageOS/android_device_motorola_griffin" path="device/motorola/griffin" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_kernel_motorola_msm8996" path="kernel/motorola/msm8996" remote="github" revision="lineage-17.1" />
+	<project name="TheMuppets/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="lineage-17.1" />
+
+	<!-- Device CheeseDump -->
+	<project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_device_oneplus_msm8998-common" path="device/oneplus/msm8998-common" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_device_oneplus_dumpling" path="device/oneplus/dumpling" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_device_oneplus_cheeseburger" path="device/oneplus/cheeseburger" remote="github" revision="lineage-17.1" />
+	<project name="ederekun/x_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="base" />
+	<project name="SirRGB/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="lineage-17.1" />
+
+	<!-- Device universal7880 -->
+	<project name="LineageOS/android_device_samsung_a7y17lte" path="device/samsung/a7y17lte" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_device_samsung_a5y17lte" path="device/samsung/a5y17lte" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_device_samsung_universal7880-common" path="device/samsung/universal7880-common" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_kernel_samsung_universal7880" path="kernel/samsung/universal7880" remote="github" revision="lineage-17.1" />
+	<project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-17.1" />
+
+	<project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_hardware_samsung_nfc" path="hardware/samsung/nfc" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_hardware_samsung_slsi_exynos" path="hardware/samsung_slsi/exynos" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_hardware_samsung_slsi_exynos7880" path="hardware/samsung_slsi/exynos7880" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_hardware_samsung_slsi_exynos5" path="hardware/samsung_slsi/exynos5" remote="github" revision="lineage-17.1" />
+	<project name="LineageOS/android_hardware_samsung_slsi_openmax" path="hardware/samsung_slsi/openmax" remote="github" revision="lineage-17.1" />
+
+	<!-- Device moto msm8937 --> 
 	<project path="device/motorola/ahannah" name="moto-msm8937/android_device_motorola_ahannah" />
 	<project path="device/motorola/cedric" name="moto-msm8937/android_device_motorola_cedric" revision="c647e4de5bf71ea8bc4ec1cf9f0fbf282c271427" />
 	<project path="device/motorola/hannah" name="moto-msm8937/android_device_motorola_hannah" />
@@ -73,7 +100,6 @@
 	<project path="device/motorola/msm8937-common" name="LineageOS/android_device_motorola_msm8937-common" revision="e3ee0a674f0ec4064dba72847bb591feb5eb415f" />
 	<project path="device/motorola/rhannah" name="moto-msm8937/android_device_motorola_rhannah" />
 	<project path="kernel/motorola/msm8953" name="Mint-OS/android_kernel_motorola_msm8953" />
-	<project path="vendor/motorola" name="moto-msm8937/proprietary_vendor_motorola" revision="c19c2afa1ea2d7f8f3c6b93614fbcf2ddd7763a0" />
 
 	<!-- Dependencies of msm8937-common -->
 	<project path="external/bson" name="LineageOS/android_external_bson" />
